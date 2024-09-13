@@ -18,6 +18,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="message">
+        <p>コレは見える？</p>
+      </div>
     </div>
   );
 }
