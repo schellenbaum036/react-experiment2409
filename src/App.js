@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./Header";
-import DailyReport from "./DailyReport";
-import Illustration from "./Illustration";
-import Footer from "./Footer";
-import Border from "./Border";
+import Header from "./components/Header";
+import DailyReport from "./components/DailyReport";
+import Illustration from "./components/Illustration";
+import Footer from "./components/Footer";
+import Border from "./components/Border";
 
 function App() {
   return (
