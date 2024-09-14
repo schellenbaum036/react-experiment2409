@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.report,
+.diagram {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.diagram {
+    position: relative;
+    min-height: 400px; /* 図解部分の縦幅を広げる */
+    overflow: hidden; /* はみ出た絵文字を隠す */
+}
+
+.report-content {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.report-item-red {
+    color: red;
+    font-weight: bold;
+}
+.report-item-blue {
+    color: blue;
+    font-weight: bold;
+}
+.report-item-cyan {
+    color: #00cccc;
+    font-weight: bold;
+}
+.report-item-pink {
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.diagram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.diagram-item {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.diagram-item h3 {
+    margin-top: 0;
+}
+
+.floating-emoji {
+    position: absolute;
+    font-size: 24px;
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .diagram-grid {
+        grid-template-columns: 1fr;
+    }
+}
